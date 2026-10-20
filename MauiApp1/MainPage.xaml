@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <!-- Título -->
+            <Label Text="Calculadora de Aporte IESS" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Campos de Texto -->
+            <Entry x:Name="NombreEntry" 
+                   Placeholder="Nombre" />
+
+            <Entry x:Name="ApellidoEntry" 
+                   Placeholder="Apellido" />
+
+            <Entry x:Name="EdadEntry" 
+                   Placeholder="Edad" 
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="SalarioEntry" 
+                   Placeholder="Salario" 
+                   Keyboard="Numeric" />
+
+            <!-- Botón de Cálculo -->
+            <Button Text="Calcular Aporte" 
+                    Clicked="OnCalcularClicked"
+                    BackgroundColor="#005eb8"
+                    TextColor="White"
+                    CornerRadius="8"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
